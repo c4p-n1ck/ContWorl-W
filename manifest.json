@@ -18,7 +18,7 @@
   "commands": {
     "_execute_browser_action": {
       "suggested_key": {
-        "default": "Ctrl+W"
+        "default": "Ctrl+Alt+W"
       },
       "description": "Handle Ctrl+W for the web shell, if the tab really needs to be closed."
     }
