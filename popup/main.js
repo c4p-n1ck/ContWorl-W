@@ -6,7 +6,7 @@ function main() {
 		if ( event.key.toLowerCase() === 'y' ) {
 			chrome.tabs.query({active: true, currentWindow: true}, (tabs) => {
 				chrome.tabs.remove(tabs[0].id);
-			})
+			}); window.close();
 		} else if ( event.key.toLowerCase() === 'n' ) {
 			window.close();
 		} else {
