@@ -20,14 +20,11 @@ function main() {
   // TODO: Animate YES/NO Buttons.
   msg.innerText += 'Are you sure? You want to close this tab.\n\n';
   msg.innerHTML += '<span style="font-weight: bold;" id="y">[Y]35</span>\t<span style="color: red;" id="n">[N]0</span>';
-  ids = ['y', 'n'];
-  for ( i in ids ) {
-    document.getElementById(ids[i]).addEventListener('click', function() {
-      if ( ! Boolean(Number(i)) ) {
-        close_current_tab();
-      }; window.close();
-    })
-  }
+  document.getElementById('y').addEventListener('click', function() {
+      close_current_tab()
+    }); document.getElementById('n').addEventListener('click', function() {
+      window.close();
+  })
 }
 
 document.addEventListener('DOMContentLoaded', main);
